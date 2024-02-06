@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/e1ad8cb5b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#my-projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="bars">
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Tamanpreet Kaur</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated and motivated CSE student with a passion 
+                        for problem-solving, communication skills, and the ability 
+                        to work both independently and as part of a team. I have 
+                        consistently demonstrated my ability to learn and manage 
+                        tasks effectively. I am seeking opportunities to work in a 
+                        challenging and dynamic environment where I can contribute 
+                        and learn from experienced professionals.</p>
+                        
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Microsoft Excel</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Chandigarh University (2020-2024) 
+                                <p>CSE(Hons.) - Big Data and Analytics<br>CGPA- 8.4 (Till Sem-7)</p></span></li>
+                            <li><span>St. Mary's School<br>
+                                <p>Intermediate (CBSE)<br>Percentage- 89.8 % || 2019-2020</p>
+                                <p>Matriculation (CBSE)<br>Percentage- 81.5 % || 2017-2018</p></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------projects-------------------- -->
+
+    <div id="my-projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Heart Disease Prediction Using Machine Learning</h3>
+                        <p>The project problem is : based on the given information about each 
+                            individual we have to calculate whether that individual will suffer 
+                            from heart disease or not.</p>
+                        <a href="https://github.com/shuklapiyush113/heart_disease_prediction" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Voice Based Emails for Visually Impaired</h3>
+                        <p>System design is voice oriented. The whole program is based on speech-to-text 
+                            and text-to-speech in particular. It is having following features:</p>
+                        <p1>Composing a mail</p1>
+                        <p2>Reading a mail</p2>
+                        <p3>Sending a mail</p3>
+                        <a href="https://github.com/Taman26kaur/Voice-Based-Emails-for-Blinds" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Banking Management System</h3>
+                        <p>The main aim of this project is to demonstrate the practical implementation of C++ 
+                            programming language in banking sector. When the project is implemented the user, 
+                            who use this product will be able to see all the information and services provided 
+                            by the ATM, when he enters the necessary option and argument to his screen.</p>
+                        <a href="https://github.com/Taman26kaur/Banking-Management-System" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+<!-- ------------------contact-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> taman26888@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/tamanpreet-kaur-0b78aa20b"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Taman26kaur"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my__resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 TK. Made by Tamanpreet Kaur <img src="images/butterfly.png"></p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
